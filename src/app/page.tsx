@@ -17,7 +17,11 @@ export default function ChakaluwaDashboard() {
   } = useGameStore();
 
   const [mounted, setMounted] = useState(false);
-  const [weather, setWeather] = useState({ temp: '--', condition: 'Loading...' });
+// This tells TypeScript: temp can be string or number
+const [weather, setWeather] = useState<{temp: string | number, condition: string}>({ 
+  temp: '--', 
+  condition: 'Loading...' 
+});
   const [currentCode, setCurrentCode] = useState("// Mindful Practice\nfunction dailyRitual() {\n  balanceLife();\n}");
   const [isDeploying, setIsDeploying] = useState(false);
 

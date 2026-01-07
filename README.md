@@ -71,7 +71,7 @@ npm install
 
 
 3. **Set your Environment:**
-Create a `.env.local` file and add your `NEXT_PUBLIC_WEATHER_API_KEY`.
+Create a `.env.local` file and add your `NEXT_PUBLIC_OPENWEATHER_API_KEY`.
 4. **Initiate Growth:**
 ```bash
 npm run dev
